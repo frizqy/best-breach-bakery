@@ -35,7 +35,7 @@ function Navbar() {
             <li><Link to="/reserve">Reserve</Link></li>
         </ul>
         <ul className='max-md:hidden w-[200px] h-[20px]'>
-            <a className='bg-(--smoky-black) pl-4 pr-4 rounded-2xl text-(--platinum)' href="/contactus">Contact Us</a>
+            <Link className='bg-(--smoky-black) pl-4 pr-4 rounded-2xl text-(--platinum)' to="/contactus">Contact Us</Link>
         </ul>
     </nav>
   )
@@ -74,10 +74,10 @@ function NavMobile({ isVisible, onClose }: AnimatedInfoBoxProps) {
         ${isVisible ? 'h-[240px]' : '-translate-y-full h-[0px] opacity-0 pointer-events-none'}
       `}
     >
-      <a className='w-full p-[10px] rounded-full hover:bg-black hover:text-white ease-in-out transition-all duration-400' onClick={() => {onClose() }} href={"/"}>Home</a>
-      <a className='w-full p-[10px] rounded-full hover:bg-black hover:text-white ease-in-out transition-all duration-400' onClick={() => {onClose() }} href={"/menu"}>Menu</a>
-      <a className='w-full p-[10px] rounded-full hover:bg-black hover:text-white ease-in-out transition-all duration-400' onClick={() => {onClose() }} href={"/reserve"}>Reserve</a>
-      <a className='w-full p-[10px] rounded-full hover:bg-black hover:text-white ease-in-out transition-all duration-400' onClick={() => {onClose() }} href={"/contactus"}>Contact Us</a>
+      <Link className='w-full p-[10px] rounded-full hover:bg-black hover:text-white ease-in-out transition-all duration-400' onClick={() => {onClose() }} to={"/"}>Home</Link>
+      <Link className='w-full p-[10px] rounded-full hover:bg-black hover:text-white ease-in-out transition-all duration-400' onClick={() => {onClose() }} to={"/menu"}>Menu</Link>
+      <Link className='w-full p-[10px] rounded-full hover:bg-black hover:text-white ease-in-out transition-all duration-400' onClick={() => {onClose() }} to={"/reserve"}>Reserve</Link>
+      <Link className='w-full p-[10px] rounded-full hover:bg-black hover:text-white ease-in-out transition-all duration-400' onClick={() => {onClose() }} to={"/contactus"}>Contact Us</Link>
     </ul>
   );
 }
