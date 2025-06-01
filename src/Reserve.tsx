@@ -26,7 +26,7 @@ const Reserve = () => {
       </ScrollAnimatedSection>
       <ScrollAnimatedSection>
         <div className='w-full h-screen max-md:flex-col text-(--smoky-black) bg-(--caput-mortuume) flex items-center justify-center'>
-          <div className='max-md:w-[30%] flex max-md:flex-col md:flex-col gap-[20px] md:w-[50%] p-[5%]'>
+          <div className='flex max-md:flex-col md:flex-col gap-[20px] md:w-[50%] p-[5%]'>
             <h1 className='text-[50px] font-bold'>Our Coffee</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores laudantium earum repellendus possimus dolor nisi hic minus non alias ipsa. Voluptates aliquam culpa sunt doloremque libero neque impedit, consectetur vero!</p>
           </div>
