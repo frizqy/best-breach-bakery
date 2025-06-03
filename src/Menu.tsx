@@ -64,7 +64,6 @@ const Menu = () => {
                 <p>Desserts</p>
                 <div className='w-full h-[1px] bg-(--smoky-black)'></div>
               </div>
-
               <div className='flex flex-wrap justify-center items-center gap-[5%]'>
                 <MenuItem menuImage={`${dessert1}`} menuName='Martabak Manis'></MenuItem>
               </div>
